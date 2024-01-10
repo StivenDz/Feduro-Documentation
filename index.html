@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portal Web" />
+    <link rel="icon" href="./assets/icons/favicon.png" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Documentacion Portal FEDURO</title>
+  </head>
+  <body>
+    <h1>Documentacion Portal FEDURO</h1>
+
+    <section class="component">
+        <h3 class="componentTitle">Inicio De Sesion</h3>
+        <section class="images">
+            <img src="./assets/img/login.jpg" alt="">
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Tipo de Dato</th>
+                    <th>Requerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Correo Electronico</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="component">
+        <h3 class="componentTitle">Registro De Usuario</h3>
+        <section class="images">
+            <img src="./assets/img/register.jpg" alt="">
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Tipo de Dato</th>
+                    <th>Requerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Codigo Del Proveedor</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Identificacion</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Correo Electronico</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Pais</td>
+                    <td>String/Seleccionable</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Direccion</td>
+                    <td>String</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Sector o Municipio</td>
+                    <td>String</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>Ciudad o Provincia</td>
+                    <td>String</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="component">
+        <h3 class="componentTitle">Cerrar Sesion / Cambiar Contraseña</h3>
+        <section class="images">
+            <img src="./assets/img/logoutorchangepass.jpg" alt="">
+        </section>
+    </section>
+
+    <section class="component">
+        <h3 class="componentTitle">Cambiar Contraseña</h3>
+        <section class="images">
+            <img src="./assets/img/changePass.jpg" alt="">
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Tipo de Dato</th>
+                    <th>Requerido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Contraseña actual</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Nueva Contraseña</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>Nueva Contraseña</td>
+                    <td>String</td>
+                    <td>SI</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+    <section class="content">
+        <p class="text">
+            El Aplicativo cuenta con los siguientes roles:
+        </p>
+        <ul>
+            <li>PROVIDER</li>
+            <li>ADMIN</li>
+            <li>DEVELOPER</li>
+        </ul>
+    </section>
+
+    <section class="content">
+        <p class="text">
+            El Rol PROVIDER podrá realizar las siguientes actividades:
+        </p>
+        <ul>
+            <li>Ver un dashboard con el monto total de las facturas, monto total impuestos, estado de cuenta, grafica y una tabla de sus facturas</li>
+            <li>Registrar facturas de tipo (Bienes Y servicios | Trafico | Fabricante)</li>
+            <li>Consultar estado de cuenta</li>
+            <li>Consultar facturas</li>
+        </ul>
+
+        <section class="component">
+            <h3 class="componentTitle">Dashboard (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/dashboard.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/registerInvoice.jpg" alt="">
+            </section>
+            <p class="subtext">
+                El usuario deberá seleccionar el tipo de factura
+            </p>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Bienes Y Servicios (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/registerInvoice-bys.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orden de Compra</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Orden de Servicio</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Numero de Factura</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Monto Total</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Trafico (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/registerInvoice-t.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orden de Compra</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Numero de Factura</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Alfanumerico/String</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Vencimiento de la Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Monto Total</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Fabricante (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/registerInvoice-f.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orden de Compra</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Numero de Factura</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Alfanumerico/String</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Vencimiento de la Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Monto del impuesto</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Monto Total</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Documento PDF Factura (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/registerInvoice-uf.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Documento</td>
+                        <td>File</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Estado de Cuentas (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/accountStatus.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Consulta de Facturas (Rol PROVIDER)</h3>
+            <section class="images">
+                <img src="./assets/img/provider/invoices.jpg" alt="">
+            </section>
+        </section>
+
+
+    </section>
+
+    <section class="content">
+        <p class="text">
+            El Rol ADMIN podrá realizar las siguientes actividades:
+        </p>
+        <ul>
+            <li>Ver un dashboard con el monto total de las facturas, monto total impuestos, estado de cuenta, grafica y una tabla de facturas (general)</li>
+            <li>Administar Usuarios, el usuario podra consultar, crear y actualizar usuarios.</li>
+            <li>Consultar estado de cuenta (general)</li>
+            <li>Consultar facturas (general)</li>
+        </ul>
+
+        <section class="component">
+            <h3 class="componentTitle">Dashboard (Rol ADMIN)</h3>
+            <section class="images">
+                <img src="./assets/img/admin/dashboard.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Administracion de Usuarios (Rol ADMIN)</h3>
+            <section class="images">
+                <img src="./assets/img/admin/userManager.jpg" alt="">
+                <img src="./assets/img/admin/userManager-c.jpg" alt="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo de Dato</th>
+                            <th>Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Apellido</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Codigo Del Proveedor</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Identificacion</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Correo Electronico</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Pais</td>
+                            <td>String/Seleccionable</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Direccion</td>
+                            <td>String</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Celular</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Sector o Municipio</td>
+                            <td>String</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Ciudad o Provincia</td>
+                            <td>String</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Contraseña</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Rol</td>
+                            <td>String/Seleccionable</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Estado</td>
+                            <td>String/Seleccionable</td>
+                            <td>SI</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="./assets/img/admin/userManager-o.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Estado de Cuentas (Rol ADMIN)</h3>
+            <section class="images">
+                <img src="./assets/img/admin/accountStatus.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Consulta de Facturas (Rol ADMIN)</h3>
+            <section class="images">
+                <img src="./assets/img/admin/invoices.jpg" alt="">
+            </section>
+        </section>
+    </section>
+
+    <section class="content">
+        <p class="text">
+            El Rol DEVELOPER podrá realizar las siguientes actividades:
+        </p>
+        <ul>
+            <li>Ver un dashboard con el monto total de las facturas, monto total impuestos, estado de cuenta, grafica y una tabla de facturas (general)</li>
+            <li>Administar Usuarios, el usuario podra consultar, crear y actualizar usuarios.</li>
+            <li>Registrar facturas de pruebas de tipo (Bienes Y servicios | Trafico | Fabricante)</li>
+            <li>Consultar logs (historial de errores en la aplicacion)</li>
+            <li>Consultar estado de cuenta (general)</li>
+            <li>Consultar facturas (general)</li>
+        </ul>
+        <section class="component">
+            <h3 class="componentTitle">Dashboard (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/dashboard.jpg" alt="">
+            </section>
+        </section>
+        <section class="component">
+            <h3 class="componentTitle">Administracion de Usuarios (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/userManager.jpg" alt="">
+                <img src="./assets/img/developer/userManager-createUser.jpg" alt="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Tipo de Dato</th>
+                            <th>Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Apellido</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Codigo Del Proveedor</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Identificacion</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Correo Electronico</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Pais</td>
+                            <td>String/Seleccionable</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Direccion</td>
+                            <td>String</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Celular</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Sector o Municipio</td>
+                            <td>String</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Ciudad o Provincia</td>
+                            <td>String</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Contraseña</td>
+                            <td>String</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>Rol</td>
+                            <td>String/Seleccionable</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>Estado</td>
+                            <td>String/Seleccionable</td>
+                            <td>SI</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="./assets/img/developer/userManager-userOptions.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/registerInvoice.jpg" alt="">
+            </section>
+            <p class="subtext">
+                El usuario deberá seleccionar el tipo de factura
+            </p>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Bienes Y Servicios (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/registerInvoice-bys.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orden de Compra</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Orden de Servicio</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Numero de Factura</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Monto Total</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Trafico (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/registerInvoice-t.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orden de Compra</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Numero de Factura</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Alfanumerico/String</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Vencimiento de la Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Monto Total</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Fabricante (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/registerInvoice-f.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Orden de Compra</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Numero de Factura</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Alfanumerico/String</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Vencimiento de la Factura</td>
+                        <td>Date/Selecionable</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Monto del impuesto</td>
+                        <td>Number</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Monto Total</td>
+                        <td>Number</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Registro De Facturas - Documento PDF Factura (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/registerInvoice-lastStep.jpg" alt="">
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Tipo de Dato</th>
+                        <th>Requerido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Documento</td>
+                        <td>File</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Estado de Cuentas (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/accountStatus.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Logs (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/logs.jpg" alt="">
+            </section>
+        </section>
+
+        <section class="component">
+            <h3 class="componentTitle">Consulta de Facturas (Rol DEVELOPER)</h3>
+            <section class="images">
+                <img src="./assets/img/developer/invoices.jpg" alt="">
+            </section>
+        </section>
+    </section>
+  </body>
+</html>

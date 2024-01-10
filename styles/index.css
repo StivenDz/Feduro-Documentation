@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: 'Poppins' !important;
+}
+
+/* *::-webkit-scrollbar {
+    display: none;
+} */
+
+body {
+    background: rgb(255, 255, 255);
+    height: 100%;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 60px;
+    font-weight: 400;
+}
+section.component{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+h3.componentTitle{
+    font-size: 22px;
+    margin-top: 60px;
+    font-weight: 500;
+    border-bottom: 1px solid #0000001f;
+    padding-bottom: 10px;
+}
+
+section.images{
+    padding-top: 30px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #0000001f;
+    /* object-fit: contain; */
+}
+table {
+    width: 100%;
+    height: 100%;
+    min-height: max-content;
+    border-spacing: 0;
+    border-collapse: unset;
+}
+
+table tr {
+    padding: 0 15px;
+}
+
+table > thead > tr {
+    height: 40px;
+    background: #ffffff;
+    z-index: 100;
+}
+
+table > thead > tr > th {
+    color: var(--secondText);
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: start;
+}
+
+table > thead > tr > th:nth-of-type(3),
+table > thead > tr > th:first-of-type {
+    padding-left: 12px;
+}
+
+table > tbody > tr {
+    height: 40px;
+    cursor: pointer;
+}
+
+table > tbody > tr:nth-child(even) {
+    background-color: #00000005;
+}
+
+table > tbody > tr:hover {
+    background-color: #00000005;
+}
+
+table > tbody > tr > td {
+    font-size: 14px;
+    border-top: 1px solid #0000001f;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+table > tbody > tr > td:first-of-type {
+    padding-left: 12px;
+}
+section.content{
+    padding: 20px 0;
+}
+p.text{
+    font-size: 20px;
+    padding: 8px 0;
+}
+p.subtext{
+    font-size: 17.5px;
+    padding: 8px 0;
+}
+ul{
+    padding-left: 45px;
+}
